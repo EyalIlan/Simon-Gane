@@ -1,0 +1,147 @@
+body {
+  text-align: center;
+  background-color: #036bda;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.8rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+
+#score{
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  color: #FEF2BF;
+  right: 5%;
+  top: 8%;
+}
+
+/* .container {
+  display: block;
+  width: 50%;
+  margin: auto;
+} */
+
+.grid{
+  margin: auto;
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+}
+
+.grid div{
+  margin: auto;
+}
+
+
+#pokeball1{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 10%;
+  left: 10%;
+  background-image: url('/images/pokaball.png');
+  background-size: contain;
+}
+#pokeball2{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: 10%;
+  right: 10%;
+  background-image: url('/images/pokaball.png');
+  background-size: contain;
+}
+
+.btn {
+  /* margin: 20px; */
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid rgb(238, 238, 241);
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img{
+    height: 100px;
+    width: 1000;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
+@media(max-width:1000px) {
+  body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.4rem;
+    margin: 15% 0;
+    color: #FEF2BF;
+  }
+
+  #score{
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    color: #FEF2BF;
+    right: 8%;
+    font-size: 1.6rem;
+    top: 12%;
+  }
+
+  .grid{
+    margin: 0;
+    width: 70%;
+  }
+
+  
+.btn img{
+  height: 200px;
+  width: 200px;
+}
+
+
+  .btn{
+    width: 300px;
+    height: 300px;
+  }
+
+
+}
